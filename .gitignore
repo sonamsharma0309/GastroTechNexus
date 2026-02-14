@@ -1,4 +1,21 @@
-venv/
+# Python
 __pycache__/
 *.pyc
+
+# Virtual environments
+venv/
+backend/venv/
+
+# OS files
 .DS_Store
+
+# Frontend
+frontend/node_modules/
+
+# Secrets
+.env
+
+# Data (local)
+data/raw/
+data/processed/
+backend/data/
