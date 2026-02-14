@@ -1,7 +1,19 @@
+# Virtual env
 backend/venv/
+venv/
+
+# Python
 __pycache__/
 *.pyc
+
+# Node
 frontend/node_modules/
+
+# Secrets
+backend/.env
 .env
+
+# Data (local)
 data/raw/
 data/processed/
+backend/data/
