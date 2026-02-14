@@ -37,10 +37,16 @@ def create_app():
     from .routes.recipes import bp as recipes_bp
     from .routes.users import bp as users_bp
 
+    # ✅ ML Route (NEW)
+    from .routes.ml import bp as ml_bp
+
     app.register_blueprint(health_bp)
     app.register_blueprint(flavors_bp)
     app.register_blueprint(recipes_bp)
     app.register_blueprint(users_bp)
+
+    # ✅ ML endpoint will become: /api/ml/predict
+    app.register_blueprint(ml_bp, url_prefix="/api/ml")
 
     @app.get("/")
     def home():
@@ -52,6 +58,7 @@ def create_app():
                     "/api/users",
                     "/api/recipes/recipe-of-day",
                     "/api/flavors/properties-by-num-rings?min=0&max=5&page=0&size=20",
+                    "/api/ml/predict (POST)",
                 ],
             }
         )
