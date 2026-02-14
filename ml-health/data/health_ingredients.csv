@@ -1,0 +1,19 @@
+ingredient,diabetes_risk,pcos_risk,alternative
+sugar,1,1,stevia
+white rice,1,1,brown rice
+maida,1,1,whole wheat flour
+potato,1,0,sweet potato
+soft drink,1,1,lemon water
+fried food,1,1,grilled food
+butter,1,1,olive oil
+cream,1,1,low-fat yogurt
+milk,0,0,none
+banana,0,0,none
+apple,0,0,none
+oats,0,0,none
+almonds,0,0,none
+eggs,0,0,none
+green vegetables,0,0,none
+dal,0,0,none
+chicken,0,0,none
+fish,0,0,none
