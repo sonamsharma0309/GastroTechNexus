@@ -1,30 +1,43 @@
-# Virtual env
-backend/venv/
+# =========================
+# Python (Backend)
+# =========================
 venv/
-
-# Python
+backend/venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.sqlite3
 
-# Node
+# =========================
+# Node (Frontend)
+# =========================
 frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
 
-# Secrets
-backend/.env
-# Virtual environments
-venv/
-backend/venv/
-
-# OS files
-.DS_Store
-
-# Frontend
-frontend/node_modules/
-
-# Secrets
+# =========================
+# Environment Variables
+# =========================
 .env
+backend/.env
+frontend/.env
 
-# Data (local)
+# =========================
+# OS / System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Local Data
+# =========================
 data/raw/
 data/processed/
 backend/data/

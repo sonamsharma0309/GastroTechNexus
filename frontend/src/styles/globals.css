@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg0: #070710;
+  --bg1: #0b0b18;
+  --card: rgba(255, 255, 255, 0.06);
+  --card2: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.12);
+
+  --p: 269 84% 60%;  /* deep purple */
+  --s: 200 100% 60%; /* neon blue */
+  --a: 150 90% 48%;  /* emerald */
+  --w: 0 88% 62%;    /* soft red */
+  --h: 330 95% 68%;  /* soft pink glow */
+}
+
+html, body, #root {
+  height: 100%;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(120, 60, 255, 0.25), transparent 55%),
+              radial-gradient(900px 500px at 85% 15%, rgba(0, 180, 255, 0.22), transparent 55%),
+              radial-gradient(1100px 700px at 40% 110%, rgba(0, 255, 170, 0.10), transparent 60%),
+              linear-gradient(180deg, var(--bg0), var(--bg1));
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(160, 90, 255, .35);
+}
+
+@layer components {
+  .glass {
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    backdrop-filter: blur(16px);
+  }
+
+  .glass-strong {
+    background: var(--card2);
+    border: 1px solid rgba(255,255,255,.16);
+    backdrop-filter: blur(18px);
+  }
+
+  .neon-border {
+    position: relative;
+  }
+  .neon-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(120deg,
+      rgba(160, 90, 255, .9),
+      rgba(0, 190, 255, .9),
+      rgba(0, 255, 170, .75),
+      rgba(255, 110, 210, .75)
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: .75;
+    filter: blur(.0px);
+    pointer-events: none;
+  }
+
+  .soft-glow {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.06),
+      0 20px 60px rgba(0,0,0,.55),
+      0 0 40px rgba(160, 90, 255, .12);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg,
+      rgba(160, 90, 255, 1),
+      rgba(0, 190, 255, 1),
+      rgba(0, 255, 170, 0.95));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-fade {
+    background-image:
+      linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(circle at 50% 30%, black 0%, transparent 70%);
+    opacity: .25;
+  }
+}
