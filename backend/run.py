@@ -1,5 +1,11 @@
+from dotenv import load_dotenv
+import os
+
 from flask_cors import CORS
 from gt_app import create_app
+
+# 🔥 Load .env file
+load_dotenv()
 
 app = create_app()
 CORS(app)
