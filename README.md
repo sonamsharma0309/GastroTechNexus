@@ -20,7 +20,7 @@ Bridging Data Science • Flavor Intelligence • Smart Health Insights
 
 <p align="center">
 🔗 <b>Live Application:</b><br/>
-https://gastro-tech-nexus-gy927gmcv-sonams-projects-4faf3c24.vercel.app
+gastro-tech-nexus-git-main-sonams-projects-4faf3c24.vercel.app
 </p>
 
 ---
