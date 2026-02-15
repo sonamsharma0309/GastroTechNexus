@@ -1,12 +1,15 @@
-from flask import current_app
-from ..utils.http import get_json
+# backend/gt_app/services/recipe_db_service.py
 
+from gt_app.utils.http import get_json
 
 def fetch_recipe_of_day():
-    base = current_app.config["RECIPEDB_BASE_URL"]
-    token = current_app.config["RECIPEDB_TOKEN"]
-
-    url = f"{base}/recipe/recipeofday"
-    headers = {"Authorization": f"Bearer {token}"}
-
-    return get_json(url, headers=headers)
+    url = "http://cosylab.iiitd.edu.in:6969/recipe2-api/recipe/recipeofday"
+    try:
+        return get_json(url)
+    except Exception:
+        # fallback so demo never breaks
+        return {
+            "Recipe_title": "RecipeDB temporarily unavailable",
+            "message": "Upstream RecipeDB timed out. Showing fallback.",
+            "img_url": "https://geniuskitchen.sndimg.com/gk/img/gk-shareGraphic.png"
+        }
