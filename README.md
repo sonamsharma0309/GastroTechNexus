@@ -1,14 +1,8 @@
-
 <h1 align="center">🚀 GastroTechNexus</h1>
 
 <h3 align="center">AI-Powered Culinary Intelligence Platform</h3>
 
-<p align="center">
-  🌐 Live Demo:
-  <a href="https://gastro-tech-nexus-9il55tlaz-sonams-projects-4faf3c24.vercel.app" target="_blank">
-    Click Here to Visit
-  </a>
-</p>
+
 
 
 
@@ -20,14 +14,17 @@
   <img src="https://img.shields.io/badge/Hackathon-Foodoscope%202026-red" />
 </p>
 
----
 
-<p align="center">
-🔗 <b>Live Application:</b><br/>
-gastro-tech-nexus-git-main-sonams-projects-4faf3c24.vercel.app
+
+
+ <p align="center">
+  🌐 <strong>Live Demo:</strong><br>
+  <a href="https://gastro-tech-nexus-git-main-sonams-projects-4faf3c24.vercel.app" target="_blank">
+    Click Here to Visit
+  </a>
 </p>
 
----
+
 
 # 🧠 Vision Behind GastroTechNexus
 
