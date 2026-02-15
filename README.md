@@ -4,8 +4,12 @@
 <h3 align="center">AI-Powered Culinary Intelligence Platform</h3>
 
 <p align="center">
-Bridging Data Science • Flavor Intelligence • Smart Health Insights
+  🌐 Live Demo:
+  <a href="https://gastro-tech-nexus-9il55tlaz-sonams-projects-4faf3c24.vercel.app" target="_blank">
+    Click Here to Visit
+  </a>
 </p>
+
 
 
 <p align="center">
